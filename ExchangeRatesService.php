@@ -55,7 +55,7 @@ class ExchangeRatesService
 
         $rates = array();
         foreach ($response->conversion as $conversion) {
-            $rates[$conversion->currency] = $conversion->rate;
+            $rates[(string)$conversion->currency] = (string)$conversion->rate;
         }
         return $rates;
     }
