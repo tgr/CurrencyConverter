@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Donate to Wikimedia!</title>
+    <meta name="viewport" content="width=device-width">
+    <style>/* reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* snap footer to bottom */
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.content {
+    padding-bottom: 33px;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    padding: 5px 0 8px;
+}
+
+/* section colors */
+.wrapper {
+    background: #efefef;
+}
+.currency-switcher, .footer {
+    background: #dedede;
+}
+
+/* header & footer lists */
+.currency-switcher, .footer {
+    text-align: center;
+}
+.currency-switcher ul,
+.currency-switcher li,
+.footer ul,
+.footer li {
+    display: inline;
+}
+
+.currency-switcher {
+    padding: 5px 0 8px;
+}
+.currency-switcher li {
+    padding-left: 1em;
+}
+
+.footer ul {
+}
+.footer li {
+    padding-left: 2em;
+    font-size: 80%;
+}
+
+/* donation buttons */
+.donation-buttons {
+    overflow: hidden;
+    padding: 2em 15%;
+    text-align: center;
+}
+.donation-buttons p {
+    padding-bottom: 1em;
+}
+.donation-buttons li {
+    display: block;
+    float: left;
+    width: 24.99%;
+}
+.donation-buttons li a {
+    display: block;
+    margin: 0 10px 15px;
+    border: solid 1px #da7c0c;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    color: #fef4e9;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    background: linear-gradient(to bottom, #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.donation-buttons li a:hover,
+.donation-buttons li a:focus {
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+    background: linear-gradient(to bottom, #f88e11,  #f06015);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.donation-buttons li a:active {
+    position: relative;
+    top: 1px;
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+    background: linear-gradient(to bottom, #f47a20,  #faa51a);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+@media (max-width: 979px) {
+    .donation-buttons li {
+        width: 49.99%;
+    }
+}
+@media (max-width: 480px) {
+    .donation-buttons li {
+        width: 100%;
+        float: none;
+    }
+}
+</style>
+    <!--[if lt IE 9]>
+    <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="currency-switcher">
+            Use another currency:            <ul>
+                            <li><a href="?currency=ARS">ARS</a></li>
+                            <li><a href="?currency=AUD">AUD</a></li>
+                            <li><a href="?currency=BGN">BGN</a></li>
+                            <li><a href="?currency=CHF">CHF</a></li>
+                            <li><a href="?currency=CZK">CZK</a></li>
+                            <li><a href="?currency=JPY">JPY</a></li>
+                        </ul>
+        </div>
+                    <div class="content donation-buttons">
+                <p>Please choose your donation size:</p>
+                <ul>
+                                    <li><a href="payment?currency=USD&amp;amount=10">USD 10</a></li>
+                                    <li><a href="payment?currency=USD&amp;amount=25">USD 25</a></li>
+                                    <li><a href="payment?currency=USD&amp;amount=50">USD 50</a></li>
+                                    <li><a href="payment?currency=USD&amp;amount=100">USD 100</a></li>
+                                </ul>
+            </div>
+                <div class="footer">
+            <ul>
+                <li><a href="privacy-policy">Privacy policy</a></li>
+                <li><a href="more-information">More information</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
