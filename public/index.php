@@ -19,6 +19,7 @@ $currencyConverter = new CurrencyConverter($service, $dao);
 $currency = isset($_GET['currency']) ? $_GET['currency'] : 'USD';
 $availableCurrencies = array_keys($currencyConverter->getRates());
 $availableCurrencies[] = 'USD';
+sort($availableCurrencies);
 
 if ($currency == 'USD') {
     // we are good, no need to convert
