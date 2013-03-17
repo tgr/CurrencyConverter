@@ -32,7 +32,7 @@ if ($currency == 'USD') {
 
 /** @var array $messages placeholder for i18n */
 $messages = array(
-    'title' => '',
+    'title' => 'Donate to Wikimedia!',
     'currency-switcher-title' => 'Use another currency:',
     'privacy-policy' => 'Privacy policy',
     'more-information' => 'More information',
@@ -75,7 +75,7 @@ function t($key) {
                 <p><?= t('donation-buttons-title') ?></p>
                 <ul>
                 <?php foreach ($options as $option): ?>
-                    <li><a href="payment?currency=<?= $currency ?>&amount=<?= $option ?>"><?= $currency .' '. $option ?></a></li>
+                    <li><a href="payment?currency=<?= $currency ?>&amp;amount=<?= $option ?>"><?= $currency .' '. $option ?></a></li>
                 <?php endforeach; ?>
                 </ul>
             </div>
