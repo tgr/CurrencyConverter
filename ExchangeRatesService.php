@@ -22,7 +22,6 @@ class ExchangeRatesService
 
     /**
      * @return string
-     * @throws Exception
      */
     protected function getXmlData()
     {
@@ -44,7 +43,6 @@ class ExchangeRatesService
     /**
      * @param string $xml
      * @return array currency => rate
-     * @throws Exception
      */
     protected function parseXml($xml)
     {
