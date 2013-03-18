@@ -22,3 +22,5 @@ TODO
 * double-check business logic
     * is it safe to assume same rate for JPY->USD and USD->JPY?
     * needs better rounding logic
+* get advice from someone who does not suck at design
+* test on more browsers (so far: Android 4/Chrome, Android 4/Firefox, some crappy iOS emulator)
